@@ -6,17 +6,18 @@ import ExploreSection from "./ExploreSection";
 import FeaturedSection from "./FeaturedSection";
 import HeroSection from "./HeroSection";
 import RecipeSection from "./RecipeSection";
-import { recipes } from "./data/recipes";
+import { recipes , data} from "./data/recipes";
 function Home() {
+  
   return (
-    <div className="bg-main">
+    <div className="">
       <NavBar /> 
       <HeroSection />
-      <RecipeSection recipes={recipes} />
+      <RecipeSection recipes={(recipes as unknown as data)} />
       <ExploreSection />
-      <FeaturedSection recipes={recipes} />
+      <FeaturedSection recipes={(recipes as unknown as data)} />
       <JoinUs />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

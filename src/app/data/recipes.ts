@@ -1,4 +1,16 @@
-export const recipes = [
+export type data = {
+  id: number
+  title: string
+  type: string
+  description: string
+  recipes: string[]
+  instructions: string[]
+  image: string
+  time: string
+  serve: number
+  difficulty: string
+}
+export const recipes : data[] = [
   {
     id: 1,
     title: "Pancakes",

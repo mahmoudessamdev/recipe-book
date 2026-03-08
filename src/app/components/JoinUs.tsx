@@ -3,7 +3,7 @@ import React from 'react'
 function JoinUs() {
   return (
     <div className='flex justify-center items-center ' >
-      <div className=" w-11/12 bg-joinBg bg-no-repeat bg-cover h-96 rounded-3xl my-5 flex justify-center items-center flex-col">
+      <div className=" w-11/12 bg-join-bg bg-no-repeat bg-cover h-96 rounded-3xl my-5 flex justify-center items-center flex-col">
         <div className="flex  justify-center flex-col items-center">
           <p className='text-white' >SUBSCRIBE</p>
           <p className='text-white font-serif text-6xl font-bold ' >JOIN THE FUN </p>
