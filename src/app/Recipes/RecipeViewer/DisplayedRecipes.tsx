@@ -7,7 +7,8 @@ import domeIcon from "../../home-icons/food.png"
 
 function DisplayedRecipes() {
   const searcParams = useSearchParams();
-  const recipe = JSON.parse(searcParams.get("recipe"))
+  const recipeParam = searcParams.get("recipe");
+  const recipe = recipeParam ? JSON.parse(recipeParam) : {};
   const ingredients = recipe.recipes
   const instructions = recipe.instructions
   return (
@@ -41,7 +42,7 @@ function DisplayedRecipes() {
                   Instructions:
                 </p>
                 <ol className='list-decimal pl-8'>
-                {instructions.map((instruction, index) =>{
+                {instructions.map((instruction: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>> | Iterable<React.ReactNode> | null | undefined> | null | undefined, index: React.Key | null | undefined) =>{
                   return <li className='text-gray-600 text-xl' key={index}>{instruction}</li>
                 })}
                 </ol>
@@ -51,7 +52,7 @@ function DisplayedRecipes() {
               <div className="p-5">
                 <p className='text-red-600 font-bold'>Ingredients:</p>
                 <ul className='list-disc pl-8'>
-                  {ingredients.map((ingredient , index)=>{
+                  {ingredients.map((ingredient: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>> | Iterable<React.ReactNode> | null | undefined> | null | undefined , index: React.Key | null | undefined)=>{
                     return <li className=''  key={index}>{ingredient}</li>
                   })}
                 </ul>

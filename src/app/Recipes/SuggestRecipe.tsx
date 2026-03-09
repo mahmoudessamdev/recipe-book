@@ -6,7 +6,7 @@ function SuggestRecipe(props: { recipes: { title: string; description: string ; 
   if(recipe !== undefined){
     const image = recipe.image;
     return (
-            <div id={recipe.id} className="bg-white rounded-3xl shadow-gray-500 shadow-xs">
+            <div id={recipe.id.toString()} className="bg-white rounded-3xl shadow-gray-500 shadow-xs">
               <div className="mb-6">
                 <Image src={`/RecipesImages/${image}`} alt={image} width={300} height={300} className='h-60 w-full object-center object-cover rounded-t-3xl'/>
               </div>

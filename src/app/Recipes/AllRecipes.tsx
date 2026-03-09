@@ -2,7 +2,7 @@
 import React , {useState , useEffect} from 'react'
 import SuggestRecipe from './SuggestRecipe'
 
-function AllRecipes(props) {
+function AllRecipes(props: { recipes: { title: string; description: string; id: number; type: string; recipes: string[]; time: string; instructions: string[]; difficulty: string; serve: number; image: string; }[]; }) {
   const [page , setPage] = useState(0);
   const [prevStyle , setPrevStyle ] = useState("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-300 text-gray-300 text-lg")
   const [nextStyle , setNextStyle ] = useState("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-300 text-gray-300 text-lg")
