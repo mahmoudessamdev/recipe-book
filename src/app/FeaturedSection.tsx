@@ -31,9 +31,9 @@ function FeaturedSection(props: { recipes: data }) {
   const section2 : number = 1 + page;
   return (
     <div className="flex justify-center items-center ">
-      <div className=" flex flex-col  w-11/12 h-570 border border-gray-400 rounded-3xl my-4">
+      <div className=" flex flex-col  w-11/12  border border-gray-400 rounded-3xl my-4">
         <div className="flex justify-between items-center p-11">
-          <p className="text-5xl font-bold ">FEATURED RECIPES</p>
+          <p className=" text-2xl md:text-3xl xl:text-5xl font-bold ">FEATURED RECIPES</p>
           <div className="">
             <button id="prevButton" className={prevStyle} onClick={prevPage}>
               &#10094;

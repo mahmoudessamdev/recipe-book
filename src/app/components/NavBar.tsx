@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import icon from "../assets/search.png";
 import logo from "../assets/logo.png";
 import Link from "next/link";
 import { Menu, Search } from "react-feather";

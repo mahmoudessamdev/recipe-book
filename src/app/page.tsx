@@ -17,7 +17,7 @@ function Home() {
       <ExploreSection />
       <FeaturedSection recipes={(recipes as unknown as data)} />
       <JoinUs />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
